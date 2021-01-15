@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001608101374';
+$dateexpire = '001608104974';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:12:{i:469;a:4:{s:2:"ID";s:3:"469";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+85";s:7:"CODE_ID";s:3:"139";s:7:"USER_ID";s:2:"47";}i:470;a:4:{s:2:"ID";s:3:"470";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+80";s:7:"CODE_ID";s:2:"17";s:7:"USER_ID";s:2:"47";}i:471;a:4:{s:2:"ID";s:3:"471";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+70";s:7:"CODE_ID";s:3:"120";s:7:"USER_ID";s:2:"47";}i:472;a:4:{s:2:"ID";s:3:"472";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+68";s:7:"CODE_ID";s:3:"117";s:7:"USER_ID";s:2:"47";}i:473;a:4:{s:2:"ID";s:3:"473";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+81";s:7:"CODE_ID";s:1:"3";s:7:"USER_ID";s:2:"47";}i:474;a:4:{s:2:"ID";s:3:"474";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+75";s:7:"CODE_ID";s:3:"106";s:7:"USER_ID";s:2:"47";}i:475;a:4:{s:2:"ID";s:3:"475";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+79";s:7:"CODE_ID";s:3:"133";s:7:"USER_ID";s:2:"47";}i:476;a:4:{s:2:"ID";s:3:"476";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+70";s:7:"CODE_ID";s:3:"121";s:7:"USER_ID";s:2:"47";}i:477;a:4:{s:2:"ID";s:3:"477";s:11:"KEYS_STRING";s:11:"Ctrl+Alt+69";s:7:"CODE_ID";s:3:"118";s:7:"USER_ID";s:2:"47";}i:478;a:4:{s:2:"ID";s:3:"478";s:11:"KEYS_STRING";s:13:"Ctrl+Shift+83";s:7:"CODE_ID";s:2:"87";s:7:"USER_ID";s:2:"47";}i:479;a:4:{s:2:"ID";s:3:"479";s:11:"KEYS_STRING";s:13:"Ctrl+Shift+88";s:7:"CODE_ID";s:2:"88";s:7:"USER_ID";s:2:"47";}i:480;a:4:{s:2:"ID";s:3:"480";s:11:"KEYS_STRING";s:13:"Ctrl+Shift+76";s:7:"CODE_ID";s:2:"89";s:7:"USER_ID";s:2:"47";}}}';
+return true;
+?>

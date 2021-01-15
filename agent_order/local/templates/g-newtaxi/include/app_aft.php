@@ -1,0 +1,1 @@
+<?php if (isset($_COOKIE['top-panel-closed']) && $_COOKIE['top-panel-closed'] == 1): ?>style="display: block"<?php endif; ?>

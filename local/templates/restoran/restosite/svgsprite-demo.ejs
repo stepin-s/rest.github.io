@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SVG Icons</title>
+  <style>
+    <%- theme %>
+  </style>
+</head>
+<body>
+<span style="visibility: hidden; position: absolute; z-index: -1;">
+  <!-- SVG-Sprite -->
+  <%- svgsprite %>
+</span>
+<div class="svgsprite">
+  <ul class="svgsprite_list">
+    <% files.forEach(function(file){ %>
+    <li class="svgsprite_list_item">
+      <svg class="svgsprite_icon">
+        <use xlink:href="#<%- file %>"/>
+      </svg>
+      <p class="svgsprite_id"><%- file %></p>
+    </li>
+    <% }); %>
+  </ul>
+</div>
+</body>
+</html>

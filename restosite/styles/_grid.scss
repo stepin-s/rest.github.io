@@ -1,0 +1,177 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  @include container-fixed;
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  @include make-row;
+}
+
+.row-no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns;
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg);
+}
+
+/*\
+ * Bootstrap 3 "hidden" utility classes.
+\*/
+
+/* Breakpoint XS */
+@media (max-width: 575px)
+{
+  .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up,
+  .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  }
+  
+}
+
+/* Breakpoint SM */
+@media (min-width: $screen-xs) and (max-width: ($screen-sm - 1) )
+{
+  .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up,
+  .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint MD */
+@media (min-width: $screen-sm) and (max-width: ($screen-md - 1))
+{
+  .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint LG */
+@media (min-width: $screen-md) and (max-width: ($screen-lg - 1) )
+{
+  .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-xl
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint XL */
+@media (min-width: $screen-lg)
+{
+  .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg
+  {
+    display: none !important;
+  }
+}
+@media (max-width: $screen-lg){} //1200
+@media (max-width: $screen-md){} //992
+@media (max-width: $screen-sm){} //768
+@media (max-width: $screen-s){} //580
+@media (max-width: $screen-xs){} //480
+@media (max-width: $screen-xxs){} //400
+
+/*скрыть и показать для мд
+hidden-lg-up - не виден для мд и выше
+hidden-md-down - не виден для см и ниже
+*/
+
+.container-fluid {
+
+  min-width: 320px;
+  max-width: 1410px;
+  //padding: 0 20px;
+
+  //@media (max-width: $screen-md){
+  //  padding: 0 20px;
+  //
+  //}
+}

@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "ejs": "~2.5.7",
+    "glob": "~7.1.2",
+    "imagemin": "^5.3.1",
+    "imagemin-svgo": "~5.2.2",
+    "svgstore-cli": "^1.3.1"
+  },
+  "scripts": {
+    "pngoptimize": "node png-optimize.js",
+    "imageminsvgo": "node imagemin-svgo.js",
+    "prebuildsprite": "npm run imageminsvgo",
+    "buildsprite": "svgstore -o svgsprite.svg --inline svg/**/*.svg",
+    "embedsprite": "node embed-sprite.js",
+    "start": "npm run pngoptimize && npm run buildsprite && npm run embedsprite"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "imagemin-pngquant": "^8.0.0",
+    "postcss-cli": "^7.1.1",
+    "sass": "^1.26.5"
+  }
+}

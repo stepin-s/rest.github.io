@@ -1,0 +1,13 @@
+
+.profile_addresses h4{
+	font-weight: 500;
+}
+#modal-edit-address .button span {
+	font-size: 16px;
+	line-height: 30px;
+	padding: 0px 25px;
+}
+select {
+	width: 100%;
+	border-color: #c4c4c4;
+}

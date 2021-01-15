@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Аккаунт";
+$arDirProperties = Array(
+
+);
+?>

@@ -1,0 +1,352 @@
+.h1, h1 {
+ font-weight: 500;
+ font-size: 30px;
+ line-height: 35px;
+ margin-top: 25px;
+
+ @media (max-width: $screen-sm) {
+  font-size: 24px;
+  line-height: 30px;
+ }
+}
+
+.h2, h2 {
+ font-weight: 500;
+ font-size: 30px;
+ line-height: 35px;
+ margin: 45px 0 35px;
+
+ @media (max-width: $screen-sm) {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 15px 0;
+ }
+}
+
+.h3, h3 {
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 30px;
+
+ @media (max-width: $screen-sm) {
+  font-size: 16px;
+  line-height: 25px;
+ }
+}
+
+a, .link {
+ font-size: 16px;
+ line-height: 20px;
+ text-decoration: none;
+}
+
+.invisible {
+ cursor: pointer;
+ text-decoration: none;
+ color: inherit;
+
+ &:hover {
+  color: inherit;
+ }
+}
+
+/*.button {
+ background: #3EA3F2;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 100%;
+ text-align: center;
+ color: #FFFFFF;
+ display: inline-block;
+ text-decoration: none;
+ padding: 13px 55px 15px;
+ border: none;
+ outline:none;
+ -webkit-box-shadow: 0px 10px 40px -10px rgba(62, 163, 242,0.65);
+ -moz-box-shadow: 0px 10px 40px -10px rgba(62, 163, 242,0.65);
+ box-shadow: 0px 10px 40px -10px rgba(62, 163, 242,0.65);
+
+ @media (max-width: $screen-sm) {
+  //height: 60px;
+  //padding-top: 0;
+  //padding-bottom: 0;
+  //display: table-cell;
+  //vertical-align: middle;
+ }
+
+ &:hover {
+  background: lighten(#3EA3F2, 15%);
+  color: #FFFFFF;
+ }
+
+ &:active {
+  background: darken(#3EA3F2, 15%);
+  color: #FFFFFF;
+ }
+
+ &.disabled {
+  background: #DDDDDD;
+  cursor: not-allowed;
+
+  &:hover {
+   background: #DDDDDD;
+   color: #fff;
+  }
+
+  &:active {
+   background: #DDDDDD;
+   color: #fff;
+  }
+ }
+}*/
+
+.button {
+ background: $cmain;
+ border-radius: 3px;
+ display: inline-block;
+ font-size: 0;
+ padding: 8px 11px 7px;
+ text-decoration: none;
+
+ span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+ }
+
+ &:hover {
+  background: darken($cmain, 5%);
+ }
+}
+
+.button--bordered {
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 20px;
+ padding: 6px 23px 5px;
+ border: 2px solid $cmain;
+ background: transparent;
+ box-sizing: border-box;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ display: inline-block;
+
+ span {
+  color: $cmain;
+ }
+
+ &.grey {
+  border: 1px solid #C4C4C4;
+ }
+
+ &.contrast {
+  padding: 8px 25px;
+
+  span {
+   color: $cnormal-body;
+   font-weight: 500;
+  }
+ }
+
+ &.grey:hover {
+  border-color: darken(#C4C4C4, 5%);
+  background: transparent;
+ }
+
+ &.contrast:hover {
+  span {
+   color: lighten($cnormal-body, 20%);
+  }
+ }
+
+ &:hover {
+  border-color: darken($cmain, 5%);
+  background: transparent;
+ }
+
+ &:hover span {
+  color: darken($cmain, 5%);
+ }
+}
+
+.text-field {
+ border: 1px solid #C4C4C4;
+ border-radius: 3px;
+ font-size: 16px;
+ line-height: 20px;
+ color: #000000;
+ padding: 9px 15px;
+ outline: none;
+ width: 100%;
+
+ &:focus {
+  box-shadow: inset 0 0 0 1px $cmain;
+  border: 1px solid $cmain;
+ }
+}
+
+
+.placeholder--grey::-moz-placeholder {
+ font-size: 16px;
+ line-height: 30px;
+ color: #888787;
+ opacity: 1;
+}
+.placeholder--grey::-webkit-input-placeholder {
+ font-size: 16px;
+ line-height: 30px;
+ color: #888787;
+ opacity: 1;
+}
+.placeholder--grey:-ms-input-placeholder {
+ font-size: 16px;
+ line-height: 30px;
+ color: #888787;
+ opacity: 1;
+}
+.placeholder--grey::-ms-input-placeholder {
+ font-size: 16px;
+ line-height: 30px;
+ color: #888787;
+ opacity: 1;
+}
+.placeholder--grey::placeholder {
+ font-size: 16px;
+ line-height: 30px;
+ color: #888787;
+ opacity: 1;
+}
+
+html body .text-center {
+ text-align: center;
+
+ &> *{
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+
+.text-right {
+ text-align: right;
+ float: right;
+}
+
+.text-left {
+ text-align: left;
+ float: left;
+}
+
+
+
+.styled-table {
+ overflow-x: auto;
+ //background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, rgba(0, 0, 20, .3), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .3), rgba(255, 255, 255, 0));
+ //background-position: left center, right center, left center, right center;
+ //background-repeat: no-repeat;
+ //background-color: transparent;
+ //background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+ //background-attachment: local, local, scroll, scroll;
+ display: block;
+ width: 100%;
+
+ table {
+  width: 100%;
+  max-width: 100%;
+ }
+
+ td {
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+ }
+}
+
+.styled-radio {
+ display:none;
+}
+
+.styled-radio + label {
+ font-size: 16px;
+ line-height: 20px;
+ vertical-align: middle;
+}
+
+.styled-radio + label .control {
+ display:inline-block;
+ width:21px;
+ height:21px;
+ vertical-align:middle;
+ cursor:pointer;
+ border: 1px solid #CFCFCF;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+ position: relative;
+ margin-top: -2px;
+}
+
+
+.styled-radio + label .text {
+ vertical-align: middle;
+ margin-left: 15px;
+}
+
+
+.styled-radio:checked + label .control:after {
+ content: '';
+ width:9px;
+ height:9px;
+ display: inline-block;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+ background: #969696;
+ position: absolute;
+ top: calc(9.5px - 4.5px);
+ left: calc(9.5px - 4.5px);
+}
+
+.styled-checkbox {
+ display:none;
+}
+
+.styled-checkbox + label {
+ font-size: 16px;
+ line-height: 20px;
+ vertical-align: middle;
+}
+
+.styled-checkbox + label .control {
+ display:inline-block;
+ width:16px;
+ height:16px;
+ vertical-align:middle;
+ cursor:pointer;
+ background: #FFFFFF;
+ border: 1px solid #CFCFCF;
+ box-sizing: border-box;
+ border-radius: 4px;
+ position: relative;
+ margin-top: -2px;
+}
+
+
+.styled-checkbox + label .text {
+ vertical-align: middle;
+ margin-left: 17px;
+}
+
+
+.styled-checkbox:checked + label .control:after {
+ content: '';
+ width:10px;
+ height:11px;
+ display: inline-block;
+ background-image: url(../svg/check.svg);
+ position: absolute;
+ top: 2px;
+ left: 2px;
+}

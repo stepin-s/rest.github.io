@@ -1,0 +1,59 @@
+	.delivery-modal {
+		padding: 30px 30px !important;
+		max-width: 765px !important;
+	}
+	div#modal-delivery h3 {
+		line-height: 22px;
+		font-size: 21px;
+		margin: 0 0 30px 0;
+	}
+	.nav-tabs {
+		border-bottom: 2px solid #dee2e6;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 0;
+		margin-bottom: 25px;
+	}
+	li.ui-tabs-active.ui-state-active {
+		border-color: #dee2e6 #dee2e6 #fff;
+		border: 0;
+		font-weight: bold;
+	}
+	.nav-tabs li a {
+		color: #000;
+		padding: 8px 10px;
+		line-height: 31px;
+	}
+	li.ui-tabs-active.ui-state-active a {
+		border: 2px solid #dee2e6;
+		border-bottom: 0;
+	}
+	li.ui-tabs-active.ui-state-active a {
+		border: 2px solid #dee2e6;
+		border-bottom: 0;
+		background: #fff;
+		outline: none;
+	}
+	.delivery-modal .button span {
+		font-size: 16px;
+		line-height: 30px;
+		padding: 0px 25px;
+	}
+	.modal {
+
+	}
+	.delivery-modal .order__info-delivery {
+		justify-content: flex-start;
+	}
+	.delivery-modal .order__detail-checkbox {
+		padding: 0;
+	}
+	a.editaddressline {
+		font-size: 12px;
+		text-decoration: underline;
+		color: #999999;
+	}
+	/*input:read-only {*/
+		/*background: url(restosite/svg/lock.svg) no-repeat;*/
+	/*}*/

@@ -1,0 +1,49 @@
+.modal-body-b {
+    max-height: none !important;
+    padding: 15px 10%;
+    background: #f7f7f7;
+}
+
+.row-fluid .span12 {
+    width: 96% !important; 
+}
+
+input[type="checkbox"] { 
+    float: none !important;
+}
+
+input[type="submit"] {
+    height: 30px !important;
+    width: 115px !important;
+}
+
+.controls img.calendar-icon {
+    float: right;
+    margin-top: 6px !important;
+}
+
+.modal-header a{
+    border-style: dashed;
+}
+
+.control-group label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.control-group input,
+.control-group select{
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.control-group input[type="checkbox"]{
+    width: auto!important;
+}
+
+.modal-footer{
+    margin: 25px 0 10px 0;
+}
+
+.starrequired{color: #f00;}
